@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>jogo</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="topo" style="background:yellow;color:white;font-size:10px">
+  <h1>RoboKids - Aprenda a Programar!!!</h1>
+</div>
+
+<div id="login">
+  <input id="nome" placeholder="nome">
+  <input id="senha" placeholder="senha">
+  <input id="idade" placeholder="idade">
+  <button onclick="cadastrar()">Cadastrar</button>
+  <button onclick="entrar()">Entrar</button>
+</div>
+
+<div id="jogo" style="display:none">
+  <select id="listaFases"></select>
+  <div id="tabuleiro"></div>
+
+  <div id="blocos">
+    <div class="bloco" onclick="add('FRENTE')"><img src="static/img/seta.png"></div>
+    <div class="bloco" onclick="add('DIREITA')"><img src="static/img/direita.png"></div>
+    <div class="bloco" onclick="add('ESQUERDA')"><img src="static/img/esquerda.png"></div>
+    <div class="bloco" onclick="add('REPETIR 3')">REPETIR</div>
+  </div>
+
+  <div id="programa"></div>
+  <button onclick="rodar()">RODAR</button>
+  <button onclick="limpar()">limpar</button>
+  <div id="msg"></div>
+</div>
+
+<div id="ranking"></div>
+
+<script src="static/app.js"></script>
+<script src="static/app.js"></script>
+</body>
+</html>
